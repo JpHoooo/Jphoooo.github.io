@@ -1085,6 +1085,10 @@ pre code {
   font-weight: 900;
   color: #d9534f;
 }
+.mermaid {
+  margin-bottom: 20px;
+  text-align: center;
+}
 .pagination .prev,
 .pagination .next,
 .pagination .page-number,
@@ -2760,7 +2764,7 @@ ul.breadcrumb li:last-child {
   transition: all 0.2s ease-in-out;
 }
 .links-of-author a::before {
-  background: #34ffa8;
+  background: #ff303b;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);

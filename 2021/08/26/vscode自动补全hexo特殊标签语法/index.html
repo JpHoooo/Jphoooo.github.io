@@ -7,10 +7,10 @@
 <meta name="generator" content="Hexo 5.4.0">
 
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
-  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/heart-128.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/heart-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/heart-16.png">
+  <link rel="mask-icon" href="/images/favicons/heart.svg" color="#222">
 
 <link rel="stylesheet" href="/css/main.css">
 
@@ -20,15 +20,15 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"serverless-page-bucket-p1ssx3ec-1301578656.cos-website.ap-hongkong.myqcloud.com","root":"/","images":"/images","scheme":"Muse","version":"8.7.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
-<meta name="description" content="随着hexo的深入学习，发现在hexo编写MarkDown文件的时候也有其特殊的标签(Tag Plugins)，在撰写文章的时候加入这些标签能使排版更加直观，但随之而来的是提高了编写的难度，因此记录使用vscode如何做到hexo的自动联想，包括next主题的特殊标签的自动联想">
+<meta name="description" content="随着hexo的深入学习，发现在hexo编写MarkDown文件的时候也有其特有的标签语法(Tag Plugins)，在撰写文章的时候加入这些标签能使排版更加直观，但随之而来的是提高了编写的难度，因此记录使用vscode如何做到hexo的自动补全，包括NexT主题的特殊标签的自动补全">
 <meta property="og:type" content="article">
 <meta property="og:title" content="vscode自动补全hexo特殊标签语法">
 <meta property="og:url" content="https://serverless-page-bucket-p1ssx3ec-1301578656.cos-website.ap-hongkong.myqcloud.com/2021/08/26/vscode%E8%87%AA%E5%8A%A8%E8%A1%A5%E5%85%A8hexo%E7%89%B9%E6%AE%8A%E6%A0%87%E7%AD%BE%E8%AF%AD%E6%B3%95/index.html">
 <meta property="og:site_name" content="Jphoooo">
-<meta property="og:description" content="随着hexo的深入学习，发现在hexo编写MarkDown文件的时候也有其特殊的标签(Tag Plugins)，在撰写文章的时候加入这些标签能使排版更加直观，但随之而来的是提高了编写的难度，因此记录使用vscode如何做到hexo的自动联想，包括next主题的特殊标签的自动联想">
+<meta property="og:description" content="随着hexo的深入学习，发现在hexo编写MarkDown文件的时候也有其特有的标签语法(Tag Plugins)，在撰写文章的时候加入这些标签能使排版更加直观，但随之而来的是提高了编写的难度，因此记录使用vscode如何做到hexo的自动补全，包括NexT主题的特殊标签的自动补全">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-08-26T13:50:05.000Z">
-<meta property="article:modified_time" content="2021-08-26T19:27:52.656Z">
+<meta property="article:modified_time" content="2021-08-27T07:52:34.796Z">
 <meta property="article:author" content="Jphoooo">
 <meta property="article:tag" content="自动联想">
 <meta property="article:tag" content="自定义语法">
@@ -91,7 +91,6 @@
         <li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li>
         <li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li>
         <li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li>
-        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li>
   </ul>
 </nav>
 
@@ -122,7 +121,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%B7%A5%E5%85%B7"><span class="nav-number">1.</span> <span class="nav-text">工具</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%89%88%E6%9C%AC"><span class="nav-number">2.</span> <span class="nav-text">版本</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE%E8%BF%87%E7%A8%8B"><span class="nav-number">3.</span> <span class="nav-text">配置过程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE%E7%94%A8%E6%88%B7%E7%89%87%E6%AE%B5"><span class="nav-number">3.1.</span> <span class="nav-text">配置用户片段</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B7%B2%E9%85%8D%E7%BD%AE%E5%A5%BD%E7%9A%84%E5%85%B3%E4%BA%8Ehexo%E4%B8%8Ehexi-next%E7%9A%84%E7%89%B9%E6%AE%8A%E6%A0%87%E7%AD%BEjson"><span class="nav-number">3.2.</span> <span class="nav-text">已配置好的关于hexo与hexi-next的特殊标签json</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%85%8D%E7%BD%AEvscode-settings-json"><span class="nav-number">3.3.</span> <span class="nav-text">配置vscode settings.json</span></a></li></ol></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%B7%A5%E5%85%B7"><span class="nav-number">1.</span> <span class="nav-text">工具</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%89%88%E6%9C%AC"><span class="nav-number">2.</span> <span class="nav-text">版本</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE%E8%BF%87%E7%A8%8B"><span class="nav-number">3.</span> <span class="nav-text">配置过程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE%E7%94%A8%E6%88%B7%E7%89%87%E6%AE%B5"><span class="nav-number">3.1.</span> <span class="nav-text">配置用户片段</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B7%B2%E9%85%8D%E7%BD%AE%E5%A5%BD%E7%9A%84%E5%85%B3%E4%BA%8Ehexo%E4%B8%8Ehexi-next%E7%9A%84%E7%89%B9%E6%AE%8A%E6%A0%87%E7%AD%BEjson"><span class="nav-number">3.2.</span> <span class="nav-text">已配置好的关于hexo与hexi-next的特殊标签json</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%85%8D%E7%BD%AEvscode-settings-json"><span class="nav-number">3.3.</span> <span class="nav-text">配置vscode settings.json</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BB%BA%E8%AE%AE"><span class="nav-number">4.</span> <span class="nav-text">建议</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -138,18 +137,18 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">3</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
           <a href="/categories/">
-        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-count">8</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-count">7</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -236,7 +235,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-08-27 03:27:52" itemprop="dateModified" datetime="2021-08-27T03:27:52+08:00">2021-08-27</time>
+        <time title="修改时间：2021-08-27 15:52:34" itemprop="dateModified" datetime="2021-08-27T15:52:34+08:00">2021-08-27</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -248,7 +247,7 @@
         </span>
           ，
         <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/hexo/vscode/" itemprop="url" rel="index"><span itemprop="name">vscode</span></a>
+          <a href="/categories/hexo/vscode%E8%87%AA%E5%8A%A8%E8%A1%A5%E5%85%A8/" itemprop="url" rel="index"><span itemprop="name">vscode自动补全</span></a>
         </span>
     </span>
 
@@ -270,7 +269,7 @@
     
     <div class="post-body" itemprop="articleBody">
         <blockquote class="blockquote-center">
-<p>随着<a target="_blank" rel="noopener" href="https://hexo.io/">hexo</a>的深入学习，发现在<a target="_blank" rel="noopener" href="https://hexo.io/">hexo</a>编写MarkDown文件的时候也有其特殊的标签(<a target="_blank" rel="noopener" href="https://hexo.io/docs/tag-plugins">Tag Plugins</a>)，在撰写文章的时候加入这些标签能使排版更加直观，但随之而来的是提高了编写的难度，因此记录使用<a target="_blank" rel="noopener" href="https://code.visualstudio.com/">vscode</a>如何做到<a target="_blank" rel="noopener" href="https://hexo.io/">hexo</a>的自动联想，包括next主题的特殊标签的自动联想</p>
+<p>随着<a target="_blank" rel="noopener" href="https://hexo.io/">hexo</a>的深入学习，发现在<a target="_blank" rel="noopener" href="https://hexo.io/">hexo</a>编写MarkDown文件的时候也有其<code>特有的标签语法</code>(<a target="_blank" rel="noopener" href="https://hexo.io/docs/tag-plugins">Tag Plugins</a>)，在撰写文章的时候加入这些标签能<code>使排版更加直观</code>，但随之而来的是<code>提高了编写的难度</code>，因此记录使用<a target="_blank" rel="noopener" href="https://code.visualstudio.com/">vscode</a>如何做到<a target="_blank" rel="noopener" href="https://hexo.io/">hexo</a>的自动补全，包括<a target="_blank" rel="noopener" href="https://theme-next.js.org/">NexT</a>主题的特殊标签的自动补全</p>
 
 </blockquote>
 
@@ -303,7 +302,7 @@
 <td align="center">1.59.1</td>
 </tr>
 </tbody></table>
-<h2 id="配置过程"><a href="#配置过程" class="headerlink" title="配置过程"></a>配置过程</h2><h3 id="配置用户片段"><a href="#配置用户片段" class="headerlink" title="配置用户片段"></a>配置用户片段</h3><p>打开<code>首选项</code> –&gt; <code>用户片段</code> –&gt;在弹出的<code>搜索框</code>输入<code>markdown</code></p>
+<h2 id="配置过程"><a href="#配置过程" class="headerlink" title="配置过程"></a>配置过程</h2><h3 id="配置用户片段"><a href="#配置用户片段" class="headerlink" title="配置用户片段"></a>配置用户片段</h3><p>打开<code>首选项</code> –&gt; <code>用户片段</code> –&gt;在弹出的<code>搜索框</code>输入<code>markdown</code> –&gt; 点击打开 <code>markdown.json</code></p>
 <p>按照文档配置需要预设的联想，如何配置文档内容这里不赘述</p>
 <p>可以参考<a target="_blank" rel="noopener" href="https://juejin.cn/post/6995509678067154957">《VS Code配置markdown代码片段》</a>改文章配置</p>
 <h3 id="已配置好的关于hexo与hexi-next的特殊标签json"><a href="#已配置好的关于hexo与hexi-next的特殊标签json" class="headerlink" title="已配置好的关于hexo与hexi-next的特殊标签json"></a>已配置好的关于hexo与hexi-next的特殊标签json</h3><a href="/2021/08/26/vscode%E8%87%AA%E5%8A%A8%E8%A1%A5%E5%85%A8hexo%E7%89%B9%E6%AE%8A%E6%A0%87%E7%AD%BE%E8%AF%AD%E6%B3%95/markdown.zip" title="下载&#96;markdown.json&#96;">下载&#96;markdown.json&#96;</a>
@@ -313,7 +312,18 @@
 <p>把<code>[markdown]里的</code>“editor.quickSuggestion”的<del><code>false</code></del>改为<code>true</code></p>
 <figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">&quot;[markdown]&quot;:&#123;</span><br><span class="line">  &quot;editor.wordWarp&quot;:&quot;on&quot;,</span><br><span class="line"><span class="deletion">-  &quot;editor.quickSuggestion&quot;:false</span></span><br><span class="line"><span class="addition">+  &quot;editor.quickSuggestion&quot;:true</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<div class="note info"><p>建议下载<a target="_blank" rel="noopener" href="https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one">Markdown All in One</a>这款扩展插件，功能十分强大，有益于快速编写Markdown内容</p>
+
+<h2 id="建议"><a href="#建议" class="headerlink" title="建议"></a>建议</h2><div class="note info"><p>建议下载<a target="_blank" rel="noopener" href="https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one">Markdown All in One</a>这款扩展插件，功能十分强大，有益于快速编写Markdown内容</p>
+<p>该插件涵盖以下功能：</p>
+<ul>
+<li>提供了常用操作便利的快捷键</li>
+<li>支持目录快速补全</li>
+<li>一边书写一边预览</li>
+<li>可轻松转换为HTML文件和PDF文件</li>
+<li>优化了List editing的编辑</li>
+<li>可格式化table以及Task list</li>
+<li>支持特殊数学符号渲染</li>
+</ul>
 </div>
 
 <p>按照以上配置，就能完成自定义语法、自动补全的功能</p>
@@ -366,6 +376,9 @@
                 </a>
             </div>
             <div class="post-nav-item">
+                <a href="/2021/08/27/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/" rel="next" title="科学上网">
+                  科学上网 <i class="fa fa-chevron-right"></i>
+                </a>
             </div>
           </div>
     </footer>
@@ -421,6 +434,8 @@
   
 
 
+  <script class="next-config" data-name="mermaid" type="application/json">{"enable":true,"theme":"forest","js":{"url":"https://cdn.jsdelivr.net/npm/mermaid@8.11.2/dist/mermaid.min.js","integrity":"sha256-lBK8/r0PCT3qtPtIvDcaT+20nHioFbzRGg36kOJ+wz4="}}</script>
+  <script src="/js/third-party/tags/mermaid.js"></script>
 
 
   
